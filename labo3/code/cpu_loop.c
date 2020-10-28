@@ -4,7 +4,7 @@
 #include <unistd.h>
 
 #define n_sec   1
-#define n_op    10
+#define n_op    80
 
 int main(void) {
 
@@ -34,13 +34,13 @@ int main(void) {
         nb_it_avg += (double)nb_it;
 
 
-        printf("op no %d, nb it: %d\n", i, nb_it);
+        printf("%d\n", nb_it);
 
     }
 
     nb_it_avg /= n_op;
 
-    printf("avg nb de multiplication: %f\n", nb_it_avg);
+    //printf("avg nb de multiplication: %f\n", nb_it_avg);
 
     return EXIT_SUCCESS;
 }

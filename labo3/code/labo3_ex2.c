@@ -20,7 +20,7 @@ int main(void) {
     struct timeval end_time;
     struct timeval diff;
 
-    while(1) {
+    for(int i = 0; i < 30; i++) {
 
         //get start time
         gettimeofday(&start_time, NULL);
@@ -31,11 +31,11 @@ int main(void) {
         //get end time
         gettimeofday(&end_time, NULL);
 
-        //calcul difference
+        //calcul difference (retard)
         diff.tv_sec = end_time.tv_sec - start_time.tv_sec - WAIT_SEC;
         diff.tv_usec = end_time.tv_usec - start_time.tv_usec - WAIT_USEC;
 
-        printf("late: %ldsec, %ldusec\n", diff.tv_sec, diff.tv_usec);
+        printf("%ld\n", diff.tv_usec);
     }
 
     return EXIT_SUCCESS;
