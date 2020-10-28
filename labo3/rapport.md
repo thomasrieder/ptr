@@ -1,6 +1,10 @@
 # PTR : Labo 3
 
-## Exercice 2
+## Etape 1
+
+Le nombre d'itération par seconde ne change pas vraiment par rapport ua laboratoire précédent
+
+## Etape 2
 
 
 ```
@@ -56,3 +60,4 @@ late: 0sec, 59usec
 PLUS RAPIDE ?? WTF
 
 ```
+
