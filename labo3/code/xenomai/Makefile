@@ -2,8 +2,8 @@
 
 XENOCONFIG=/usr/bin/xeno-config
 CC=	$(shell $(XENOCONFIG) --cc)
-CFLAGS= $(shell $(XENOCONFIG) --skin=alchemy --cflags)
-LDFLAGS=$(shell $(XENOCONFIG) --skin=alchemy --ldflags)
+CFLAGS= $(shell $(XENOCONFIG) --skin=native --cflags)
+LDFLAGS=$(shell $(XENOCONFIG) --skin=native --ldflags)
 
 all:: xenomai_timer
 clean::
